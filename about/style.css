@@ -9,7 +9,7 @@
 }
 
 header {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 2) 30%,rgba(0, 0, 0, 0)) , url(/computgeeks.github.io/images/cool-game-pic.webp);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 2) 30%,rgba(0, 0, 0, 0)) , url("https://computgeeks.github.io/images/cool-game-pic.webp");
     height: 100vh;
     background-size: cover;
     -webkit-background-size:cover;
