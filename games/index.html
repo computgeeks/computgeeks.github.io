@@ -7,62 +7,6 @@
     <title>Games</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel=stylesheet>
     <script src="https://kit.fontawesome.com/823cd0d9fe.js" crossorigin="anonymous"></script>
-    <style>
-        .search-box{
-  width: fit-content;
-  height: fit-content;
-  position: relative;
-}
-.input-search{
-  height: 50px;
-  width: 50px;
-  border-style: none;
-  padding: 10px;
-  font-size: 18px;
-  letter-spacing: 2px;
-  outline: none;
-  border-radius: 25px;
-  transition: all .5s ease-in-out;
-  background-color: #22a6b3;
-  padding-right: 40px;
-  color:#fff;
-}
-.input-search::placeholder{
-  color:rgba(255,255,255,.5);
-  font-size: 18px;
-  letter-spacing: 2px;
-  font-weight: 100;
-}
-.btn-search{
-  width: 50px;
-  height: 50px;
-  border-style: none;
-  font-size: 20px;
-  font-weight: bold;
-  outline: none;
-  cursor: pointer;
-  border-radius: 50%;
-  position: absolute;
-  right: 0px;
-  color:#ffffff ;
-  background-color:transparent;
-  pointer-events: painted;  
-}
-.btn-search:focus ~ .input-search{
-  width: 300px;
-  border-radius: 0px;
-  background-color: transparent;
-  border-bottom:1px solid rgba(255,255,255,.5);
-  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
-}
-.input-search:focus{
-  width: 300px;
-  border-radius: 0px;
-  background-color: transparent;
-  border-bottom:1px solid rgba(255,255,255,.5);
-  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
-}
-    </style>
 </head>
 <body>
     <header>
@@ -77,37 +21,15 @@
         </div>
         <div class = "welcome-text">
             <h1>Games</h1>
-
-            <div class="search-box">
-    <button class="btn-search"><i class="fas fa-search"></i></button>
-    <input type="text" class="input-search" placeholder="Type to Search...">
-  </div>
                 <ul>
-                    <a class = "linkItem" href = "https://computgeeks.github.io/minecraft"><li class = "games"><li>Minecraft</li></a>
-                    <a class = "linkItem" href = "https://computgeeks.github.io/FL.html"><li class = "games"><li>Fall Guys</li></a>
-                    <a class = "linkItem" href = "https://computgeeks.github.io/RL.html"><li class = "games"><li>Rocket Leage</li></a>
-                    <a class = "linkItem" href = "https://computgeeks.github.io/TS.html"><li class = "games"><li>Tanuki Sunset</li></a>
+                    <a href = "https://computgeeks.github.io/minecraft"><li class = "games"><li>Minecraft</li></a>
+                    <a href = "https://computgeeks.github.io/FL.html"><li class = "games"><li>Fall Guys</li></a>
+                    <a href = "https://computgeeks.github.io/RL.html"><li class = "games"><li>Rocket Leage</li></a>
+                    <a href = "https://computgeeks.github.io/TS.html"><li class = "games"><li>Tanuki Sunset</li></a>
                 </ul>
             </div>
         </div>
     </header>
-    <script>
-   const searchInput = document.getElementById('input-search');
-    const linkItems = document.getElementsByClassName('linkItem');
     
-    searchInput.addEventListener('input', function() {
-      const searchTerm = searchInput.value.toLowerCase();
-      
-      for (let i = 0; i < linkItems.length; i++) {
-        const linkText = linkItems[i].textContent.toLowerCase();
-        if (linkText.includes(searchTerm)) {
-          linkItems[i].style.display = 'block';
-        } else {
-          linkItems[i].style.display = 'none';
-        }
-      }
-    });
-
-  </script>
 </body>
 </html>
